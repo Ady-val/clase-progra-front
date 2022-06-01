@@ -11,3 +11,43 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.nombre {
+  color: aquamarine;
+  font-size: 60px;
+}
+
+.title {
+  color: aquamarine;
+  font-size: 60px;
+}
+
+.subtitle {
+  color: purple;
+  font-size: 45px;
+}
+
+.text {
+  color: aquamarine;
+  font-size: 45px;
+}
+
+.container {
+  border: 1px solid #000;
+  padding: 25px 25px 25px 25px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pokemon-container {
+  margin: 0px 50px 50px 0px;
+}
+
+.pokemon-name {
+  color: aquamarine;
+  font-size: 40px;
+}
