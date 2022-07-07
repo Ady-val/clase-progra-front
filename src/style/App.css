@@ -1,33 +1,115 @@
+:root {
+  --poke-red: #f05;
+  --poke-black: #112;
+  --poke-background: #E9EBFF;
+  --poke-radius: 2.5rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .App {
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
   text-align: center;
+  background-color: var(--poke-background);
+  
+  width: 100vw;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-header {
+  flex: 1;
+  background-color: var(--poke-red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-main {
+  flex: 3;
+  display: flex;
+  padding: 10px 20px;
 }
 
-.App-header {
-  background-color: #ff0055;
-  width: 100%;
-  height: 30px;
+.poke-search,
+.poke-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.name,
+.image,
+.stats,
+.list,
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 15px);
+}
+.name,
+.stats,
+.list,
+.search-container {
+  background-color: #eaeaea;
+  margin: 10px;
+  outline: 4px solid var(--poke-black);
+  border-radius: var(--poke-radius);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.name {
+  flex: 2;  
+}
+
+.image {
+  flex: 6;
+}
+
+.stats {
+  flex: 3;
+}
+
+.list {
+  flex: 9
+}
+
+.search-container {
+  flex: 2;
+  background-color: var(--poke-red);
+}
+
+.search {
+  border-radius: 1.5rem;
+  background-color: var(--poke-background);
+  width: calc(100% - 50px);
+  height: calc(100% - 50px);
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  color: var(--poke-red);
+}
+
+.search-icon {
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-input {
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  color: var(--poke-red);
 }
